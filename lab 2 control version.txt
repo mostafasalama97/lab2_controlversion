@@ -1,0 +1,44 @@
+1- 
+-git init
+-git add *
+-git commit
+-git checkout -b mainee
+-git push -u origin mainee
+
+2-
+-git checkout -b test
+-touch tete.exe
+-git add .
+-git commit
+-git push origin test
+
+3-
+-git checkout -b dev
+-touch devo.exe
+-git add .
+-git commit
+-git push origin dev
+
+4-
+-git merge --no -ff test -m "merger"
+-git merge --no -ff dev-m "merger"
+
+5-
+-git branch -D test
+-git push origin :div
+
+6-
+-git checkout -f dev
+
+7-
+-git checkout -b mainee
+-git tag v1.7
+
+8-
+-git push tag
+
+9-git tag
+
+10-
+-git tag -d v1.7
+
