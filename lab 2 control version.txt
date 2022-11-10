@@ -1,8 +1,9 @@
 1- 
 -git init
 -git add *
--git commit
+-git commit -m "lab2"
 -git checkout -b mainee
+-git remote add origin <ssh link>
 -git push -u origin mainee
 
 2-
@@ -13,6 +14,7 @@
 -git push origin test
 
 3-
+-git checkout mainee
 -git checkout -b dev
 -touch devo.exe
 -git add .
@@ -20,25 +22,35 @@
 -git push origin dev
 
 4-
+-git checkout mainee
 -git merge --no -ff test -m "merger"
 -git merge --no -ff dev-m "merger"
+-git push
 
 5-
--git branch -D test
--git push origin :div
+-git branch -D test 'locally'
+-git push origin :div 'remotly'
 
 6-
+{
+	-git stash save "my_stash"
+	-git checkout main  "any branch"
+}
 -git checkout -f dev
 
 7-
 -git checkout -b mainee
--git tag v1.7
+-git tag -a v1.7 -m "Version 1.7"
 
 8-
--git push tag
+-git push --tag
 
 9-git tag
 
 10-
--git tag -d v1.7
+-git tag -d v1.7 'localy'
+-git push --delete origin v1.7 'remotly'
+
+11-
+- goto github > Issues > new issue > darg and drop your pic on write box then copy link > open README.md > edit this file and past the link of pic > click on preview
 
